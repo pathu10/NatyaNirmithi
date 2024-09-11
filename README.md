@@ -41,10 +41,11 @@ NatyaNirmiti/
 
     bash
     git clone [https://github.com/pathu10/NatyaNirmithi_Bharathanatyam_pose_detection.git](https://github.com/pathu10/NatyaNirmithi_Bharathanatyam_pose_detection)
-    cd NatyaNirmiti
+
+   cd NatyaNirmiti
     
 
-2. *Create and activate the virtual environment*:
+3. *Create and activate the virtual environment*:
 
     bash
     python -m venv bharatanatyam-env
@@ -60,7 +61,7 @@ NatyaNirmiti/
       bharatanatyam-env\Scripts\activate.bat
       
 
-3. *Install the required packages*:
+4. *Install the required packages*:
 
     bash
     pip install -r requirements.txt
