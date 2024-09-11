@@ -20,7 +20,7 @@ NatyaNirmiti aims to recognize and classify Bharatanatyam dance poses from image
 ## Project Structure
 
 plaintext
-NatyaNirmiti/
+NatyaNirmithi_Bharathanatyam_pose_detection/
 ├── bharatanatyam-env/  # Virtual environment
 ├── data/               # Data folder
 │   ├── raw/            # Raw images and videos
@@ -42,7 +42,7 @@ NatyaNirmiti/
     bash
     git clone [https://github.com/pathu10/NatyaNirmithi_Bharathanatyam_pose_detection.git](https://github.com/pathu10/NatyaNirmithi_Bharathanatyam_pose_detection)
 
-   cd NatyaNirmiti
+   cd NatyaNirmithi_Bharathanatyam_pose_detection
     
 
 3. *Create and activate the virtual environment*:
