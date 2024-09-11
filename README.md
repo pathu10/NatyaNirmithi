@@ -1,3 +1,5 @@
+
+
 # NatyaNirmiti: Subtitle Generation for Bharatanatyam Poses                                                                       
 
 ## Overview
@@ -20,7 +22,7 @@ NatyaNirmiti aims to recognize and classify Bharatanatyam dance poses from image
 ## Project Structure
 
 ```plaintext
-NatyaNirmithi_Bharathanatyam_pose_detection/
+NatyaNirmiti/
 ├── bharatanatyam-env/  # Virtual environment
 ├── data/               # Data folder
 │   ├── raw/            # Raw images and videos
@@ -35,86 +37,86 @@ NatyaNirmithi_Bharathanatyam_pose_detection/
 └── README.md           # This README file
 ```
 
-
 ## Setup
 
-1. *Clone the repository*:
+1. **Clone the repository**:
 
-    bash
-    git clone [https://github.com/pathu10/NatyaNirmithi_Bharathanatyam_pose_detection.git](https://github.com/pathu10/NatyaNirmithi_Bharathanatyam_pose_detection)
+    ```bash
+    git clone https://github.com/your-repo/NatyaNirmiti.git
+    cd NatyaNirmiti
+    ```
 
-   cd NatyaNirmithi_Bharathanatyam_pose_detection
-    
+2. **Create and activate the virtual environment**:
 
-3. *Create and activate the virtual environment*:
-
-    bash
+    ```bash
     python -m venv bharatanatyam-env
+    ```
 
-    - *For PowerShell*:
+    - **For PowerShell**:
 
-      powershell
-      .\bharatanatyam-env\Scripts\Activate.ps1    
+      ```powershell
+      .\bharatanatyam-env\Scripts\Activate.ps1
+      ```
 
-    - *For Command Prompt*:
+    - **For Command Prompt**:
 
-      cmd
+      ```cmd
       bharatanatyam-env\Scripts\activate.bat
-      
+      ```
 
-4. *Install the required packages*:
+3. **Install the required packages**:
 
-    bash
+    ```bash
     pip install -r requirements.txt
-    
+    ```
 
 ## Running the Scripts
 
 ### Preprocess Images
 
-bash
+```bash
 python src/preprocess.py
-
+```
 
 This script converts raw video files into RGB format images and extracts frames.
 
 ### Extract Features
 
-bash
+```bash
 python src/feature_extraction.py
-
+```
 
 This script computes Motion History Images (MHI) and Histograms of Gradient of MHI (HoGMHI) as features from the processed images.
 
 ### Train Model
 
-bash
+```bash
 python src/train.py
-
+```
 
 This script trains the model using the extracted features and saves the trained model.
 
 ### Evaluate Model
 
-bash
+```bash
 python src/evaluate.py
-
+```
 
 This script evaluates the performance of the trained model using accuracy and other metrics.
 
 ### Make Predictions
 
-bash
+```bash
 python src/predict.py --image_path <path_to_image>
-
+```
 
 This script predicts the Bharatanatyam pose for a given input image.
 
 ## Next Steps
 
-1. *Collect more data*: More data will help improve the model's accuracy.
-2. *Experiment with CNNs*: Implement a Convolutional Neural Network (CNN) for better performance.
-3. *Tune Hyperparameters*: Optimize the model's hyperparameters for better accuracy.
+1. **Collect more data**: More data will help improve the model's accuracy.
+2. **Experiment with CNNs**: Implement a Convolutional Neural Network (CNN) for better performance.
+3. **Tune Hyperparameters**: Optimize the model's hyperparameters for better accuracy.
 
 ## Acknowledgments
 
