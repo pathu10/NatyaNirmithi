@@ -19,7 +19,7 @@ NatyaNirmiti aims to recognize and classify Bharatanatyam dance poses from image
 
 ## Project Structure
 
-plaintext
+```plaintext
 NatyaNirmithi_Bharathanatyam_pose_detection/
 ├── bharatanatyam-env/  # Virtual environment
 ├── data/               # Data folder
@@ -33,6 +33,7 @@ NatyaNirmithi_Bharathanatyam_pose_detection/
 │   ├── evaluate.py     # Evaluation script
 │   └── predict.py      # Prediction script
 └── README.md           # This README file
+```
 
 
 ## Setup
